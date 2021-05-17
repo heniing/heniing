@@ -1,0 +1,27 @@
+package fundamentos;
+
+import java.util.Scanner;
+
+public class CalculadoraIMC {
+	
+	public static void main(String[] args) {
+		
+		Scanner entrada = new Scanner (System.in);
+		
+		System.out.printf("Insira o seu peso (KG): ");
+		double peso = entrada.nextDouble();
+		
+		System.out.printf("Insira a sua altura (Ex: 1,60): ");
+		double altura = entrada.nextDouble();
+		
+		double result = altura * altura;
+		
+		double fim = (int) peso  / result;
+		
+		System.out.printf("Seu IMC é: %.2f ", fim);		
+				
+		
+		entrada.close();
+		
+	}
+}
